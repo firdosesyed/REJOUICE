@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+font-family: "Consolas";
+
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+ overflow: hidden;
+ height: 100%;
+ width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 12vh;
+  align-items: center;
+}
+
+nav h2 {
+  padding: 1vh 3vw;
+  font-weight: 400;
+  margin-top: 25px;
+  z-index: 99;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.video {
+  height: 100vh;
+  width: 100%;
+
+}
+.video video {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.video h1 {
+color: white;
+    position: absolute;
+  z-index: 99;
+justify-content: center;
+display: flex;
+align-items: center;
+top: 58%;
+height: 30%;
+padding: 2vw 0;
+font-size: 16vw;
+letter-spacing: 20px;
+width: 100%;
+bottom: 0;
+}
+
+#cursor{
+  height: 6.2vw;
+  background-color: rgba(14, 13, 13, 0.651);
+  color: white;
+  width: 7vw;
+  border-radius: 50%;
+position: fixed;
+z-index: 999;
+display: flex;
+opacity: 0;
+transform: translate(-50%, -50%);
+justify-content: center;
+align-items: center;
+}
+
+.down-part{
+  height: 50vh;
+  width: 95%;
+display: flex;
+flex-direction: column;
+padding: 6vw 0;
+position: relative;
+align-items: center;
+justify-content: space-between;
+}
+
+.upper-part{
+  display: flex;
+  align-content: center;
+  height: 20%;
+position: relative;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1vw 0;
+  border-bottom: 2px solid black;
+}
+.upper-part h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.lower-part{
+  height: 100%;
+  width: 100%;
+}
+
+.lower-part h2 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  width:100%;
+  letter-spacing: 1px;
+  padding:  1vh 1vw;
+  margin-left: 80px;
+}
+
+.third-part{
+  min-height:50vh;
+  width: 100%;
+  display: flex;
+  padding: 3vw 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+.third-part h2 {
+font-weight: 600;
+letter-spacing: 1px;
+font-size: 1.1rem;
+}
+
+.third-part h2 span {
+  background-color: black;
+border-radius: 20px;
+font-size: 0.7rem;
+  padding: 0.8vh 2vh; 
+  color: white;
+text-align: center;
+font-weight: 400;
+}
+
+.third-part-2{
+  height: 18vh;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding: 0 2vw;
+
+}
+
+.third-part-2 h1 {
+  font-size: 4.4rem;
+  text-decoration: line;
+width: 110%;
+height: 10vh;
+font-weight: 600;
+text-align: center;
+}
+
+.third-part-2 a {
+  color: black;
+text-decoration: none;
+font-weight: 400;
+}
+
+.container{
+height: 90vh;
+width: 100%;
+position: relative;
+
+}
+
+.about{
+  display: flex;
+justify-content: space-around;
+gap: 50vw;
+padding: 0 .1vw;
+position: relative;
+width: 100%;
+}
+.about h2 {
+text-align: center;
+font-weight: 400;
+font-size: 1.5rem;
+}
+.img-container{
+  height: 90%;
+  width: 100%;
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: center;
+}
+
+.img-box-1{
+  background-color: yellow;
+  position: relative;
+  height: 95%;
+  width: 30%;
+  background: url("https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format");
+  background-size: cover;
+}
+
+.img-box-1:hover video{
+  opacity: 1;
+  transition: all ease-in-out .40s ; 
+
+}
+.img-box-2:hover video{
+  opacity: 1;
+transition: all ease-in-out .40s ; 
+
+}
+.img-box-3:hover video{
+  opacity: 1;
+transition: all ease-in-out .40s ; 
+
+}
+
+.video-left{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+.video-left video {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+background-size:cover;
+position: absolute;
+opacity: 0;
+transition: all ease-in-out .40s ; 
+
+}
+
+.video-middle video {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+background-size:cover;
+position: absolute;
+opacity: 0;
+transition: all ease-in-out .40s ; 
+
+}
+
+.video-right video {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+background-size:cover;
+position: absolute;
+opacity: 0;
+transition: all ease-in-out .40s ; 
+
+}
+
+
+.img-box-2{
+  background-color: green;
+  position: relative;
+  height: 95%;
+  width: 30%;
+background: url("https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format");
+background-size: cover;
+
+}
+.img-box-3{
+  background-color: pink;
+  position: relative;
+  height: 95%;
+  width: 30%;
+background: url("https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format");
+background-size: cover;
+
+}
+
+#img-svg{
+  height: 2.5vw;
+  width: 35%;
+  top: 85%;
+  left: 30%;
+  text-align: center;
+  position: absolute;
+}
+
+@media ( max-width: 390px) {
+  nav h2{
+    height: 100%;
+    width: 100%;
+z-index: 99;
+padding: 1vw 4vw;
+background-color: aliceblue;
+color: brown;
+    font-size: 1rem;
+  }
+  nav {
+    height: 15vh;
+    width: 100%;
+padding: 1vw 4vw;
+    font-size: 1rem;
+  }
+}
